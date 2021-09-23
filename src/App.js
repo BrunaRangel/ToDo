@@ -74,18 +74,18 @@ outline:#558;
 padding-left:1rem;
 `;
 
-// const Button = styled.button`
-// width:5%;
-// height:100%;
-// background-color:transparent;
-// border:none;
-// `;
+const Button = styled.button`
+width:5%;
+height:100%;
+background-color:transparent;
+border:none;
+`;
 
-// const Image = styled.img`
-// width:30px;
-// height:30px;
-// border:none;
-// `;
+const Image = styled.img`
+width:30px;
+height:30px;
+border:none;
+`;
 
 const WrapList = styled.div`
 width:100%;
@@ -146,9 +146,9 @@ const App = () => {
             </BoxSubTitle>
               <BoxInputButton>
                 <Input  />
-                {/*<Button>
+                <Button>
                   <Image src={buttonAdd} alt="adicionar" />
-                </Button>*/}
+                </Button>
               </BoxInputButton>
               <WrapList>
                 <BoxList>
