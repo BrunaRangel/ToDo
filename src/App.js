@@ -116,20 +116,20 @@ font-size:1.5rem;
 padding-left:1rem;
 `;
 
-//const ButtonBin = styled.button`
-//width:5%;
-//height:100%;
-//background-color:transparent;
-//border:none;
-//display:flex;
-//justify-content: center;
-//align-items: center;
-//`;
+const ButtonBin = styled.button`
+width:5%;
+height:100%;
+background-color:transparent;
+border:none;
+display:flex;
+justify-content: center;
+align-items: center;
+`;
 
-// const ImageBin = styled.img`
-// height:25px;
-// border:none;
-// `;
+const ImageBin = styled.img`
+height:25px;
+border:none;
+`;
 
 const App = () => {
 
@@ -154,9 +154,9 @@ const App = () => {
                 <BoxList>
                   <Item>
                   </Item>
-                  {/*<ButtonBin>
+                  <ButtonBin>
                       <ImageBin src={bin} alt="adicionar" />
-                  </ButtonBin>*/}
+                  </ButtonBin>
                 </BoxList>
             </WrapList>
             </WrapBacklog>
