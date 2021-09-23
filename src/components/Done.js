@@ -6,10 +6,10 @@ import buttonAdd from "../assets/images/add.svg";
 import bin from "../assets/images/men-bin.svg";
 
 
-const WrapDoing = styled.section`
+const WrapDone = styled.section`
   width:33%;
   height:100%;
-  border-right: 2px solid #fff;
+  border-left: 2px solid #fff;
   border-left: 2px solid #fff;
 `;
 
@@ -33,11 +33,11 @@ border-top: 2px solid #fff;
 border-bottom: 2px solid #fff;
 display:flex;
 align-items: center;
-background-color:transparent;
+background-color: transparent;
 `;
 
 const Input = styled.input`
-width:90%;
+width:95%;
 height:90%;
 background-color:transparent;
 color:#3a4844;
@@ -52,7 +52,6 @@ const Button = styled.button`
 height:100%;
 background-color:transparent;
 border:none;
-
 `;
 
 const Image = styled.img`
@@ -106,17 +105,17 @@ height:25px;
 border:none;
 `;
 
-const Doing = () => {
+const Done = () => {
 
-  const [doing, setDoing] = useState("");
+  const [done, setDone] = useState("");
   const [list, setList] = useState([]);
   
     const add = () => {
-      const newDoing = {
-       doing: doing,
+      const newDone = {
+       done: done,
         id: Date.now()
       };
-      setList([...list, newDoing]); 
+      setList([...list, newDone]); 
     };
   
     const garbage = (id) => {
@@ -125,15 +124,15 @@ const Doing = () => {
     
 
   return (
-      <WrapDoing>
+      <WrapDone>
         <BoxSubTitle>
-          <SubTitle>Doing</SubTitle>
+          <SubTitle>Done</SubTitle>
         </BoxSubTitle>
           <BoxInputButton>
             <Input 
               type="text"
-              value={doing}
-              onChange={evento => setDoing(evento.target.value)} 
+              value={done}
+              onChange={evento => setDone(evento.target.value)} 
               placeholder="Add a task"/>
             <Button onClick={add}>
               <Image src={buttonAdd} alt="adicionar" />
@@ -143,7 +142,7 @@ const Doing = () => {
           {list.map((item) => (
             <BoxList>
               <Item>
-                {item.doing}   
+                {item.done}   
               </Item>
               <ButtonBin onClick={() => garbage(item.id)}>
                   <ImageBin src={bin} alt="adicionar" />
@@ -151,8 +150,8 @@ const Doing = () => {
             </BoxList>
           ))}
         </WrapList>
-        </WrapDoing>
+        </WrapDone>
   );
 };  
 
-export default Doing;
+export default Done;

@@ -7,16 +7,16 @@ import bin from "../assets/images/men-bin.svg";
 
 
 const WrapTask = styled.section`
-  width:100%;
+  width:33%;
   height:100%;
+  border-right: 2px solid #fff;
 `;
 
 const BoxSubTitle = styled.div`
 width:100%;
 height:8vh;
 display:flex;
-justify-content: flex-start;
-padding-left:1rem;
+justify-content: center;
 align-items: center;
 `;
 
@@ -48,7 +48,6 @@ padding-left:1rem;
 `;
 
 const Button = styled.button`
-width:5%;
 height:100%;
 background-color:transparent;
 border:none;
@@ -95,8 +94,10 @@ height:100%;
 background-color:transparent;
 border:none;
 display:flex;
-justify-content: center;
+justify-content: end;
 align-items: center;
+padding-right: 0.8rem;
+
 `;
 
 const ImageBin = styled.img`
