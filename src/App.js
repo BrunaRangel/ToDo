@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import styled from "styled-components";
 import './index.css'
 import Task from './components/Task';
+import Doing from './components/Doing';
 
-import buttonAdd from "./assets/images/add.svg";
-import bin from "./assets/images/men-bin.svg";
+// import buttonAdd from "./assets/images/add.svg";
+// import bin from "./assets/images/men-bin.svg";
 
 const Container = styled.section`
   width: 100%;
@@ -175,6 +176,7 @@ const App = () => {
     </BoxTitle>
     <WrapToDo>
         <Task />
+        <Doing />
     </WrapToDo>
   </Container>
   );
